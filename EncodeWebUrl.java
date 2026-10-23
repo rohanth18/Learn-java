@@ -73,8 +73,10 @@ public class EncodeWebUrl
         {
             urlArray[i] = url.charAt(i);
         }
+
         System.out.println("Original url");
         printUrl(urlArray);
+        
         encodeWebUrl(urlArray);
         System.out.println("\nEncoded url");
         printUrl(urlArray);
