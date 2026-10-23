@@ -3,7 +3,7 @@ public class Dhurandar3
     public static boolean isVowel(char ch)
     {
         if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' ||
-                ch == 'u' || ch == 'A' || ch == 'E' || ch == 'O' ||
+                ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' ||
                 ch == 'U')
         {
             return true;       
