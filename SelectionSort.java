@@ -2,6 +2,10 @@ public class SelectionSort
 {
     public static void selectionSort(int[] array)
     {
+        if(array == null || array.length == 0)
+        {
+            return;
+        }
         for(int i = 0; i < array.length - 1; i++)
         {
             int minValue = array[i];
