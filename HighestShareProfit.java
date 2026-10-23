@@ -51,7 +51,7 @@ public class HighestShareProfit
     }
     public static void main(String[] args) 
     {
-        double[] sharePrices = {1.2, 1.5, 5.7, 0.5, 1.6};
+        double[] sharePrices = {1.2,1.5,6.4,3.2,0.5,5.7};
         //System.out.println("Highest profit = "+getHighestProfit(sharePrices));
         System.out.println("Highest profit = "+getHighestProfitV2(sharePrices));
 
