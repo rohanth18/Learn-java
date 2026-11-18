@@ -205,6 +205,61 @@ public class Strings2
     }
 
     //compareToIgnoreCase() -- explore to write code
+
+
+    //searching methods
+    //static 
+
+    //trim() method
+    //It removes leading and trailing spaces
+    static void demoTrim()
+    {
+        String word = "  Hi  ";
+        System.out.println("Original String : "+word);
+        String word1 = word.trim();
+        System.out.println("String after removing leading and trailing spaces : "+word1);
+    }
+
+    static void demoSplit()
+    {
+        String word = "Hi  Guru";
+        System.out.println("Original String : "+word);
+        String[] word1 = word.split(" ");
+        for(String word2 : word1)
+        {
+            System.out.print(word2);
+        }
+    }
+
+    //isEmpty
+    static void demoIsEmpty()
+    {
+        String str1 = "";
+        String str2 = " ";
+        String str3 = "Java";
+
+        System.out.println(str1.isEmpty());
+        System.out.println(str2.isEmpty());
+        System.out.println(str3.isEmpty());
+
+    }
+
+    //subString begin and 
+    static void demoSubStringBegin()
+    {
+        String word = "Programming";
+
+        System.out.println(word.substring(3));
+
+    }
+
+    //subString begin and end
+    static void demoSubStringBeginAndEnd()
+    {
+        String word = "Programming";
+
+        System.out.println(word.substring(3, 7));
+    }
     public static void main(String[] args) 
     {
         //demo1();
@@ -217,7 +272,12 @@ public class Strings2
         //demoToCharArray();
         //demoEquals();
         //demoEqualsIgnoreCase();
-        demoCompareTo();
+        //demoCompareTo();
+        //demoTrim();
+        //demoSplit();
+        //demoIsEmpty();
+        demoSubStringBegin();
+        demoSubStringBeginAndEnd();
         
     }
     
