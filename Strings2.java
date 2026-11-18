@@ -260,6 +260,23 @@ public class Strings2
 
         System.out.println(word.substring(3, 7));
     }
+
+    //replace
+    //replaceall
+    //endWith
+    //indexOf()
+    static void demoIndexOf()
+    {
+        String str = "www.google.com";
+        System.out.println(str.indexOf('.'));
+    }
+    //lastindexof()
+    static void demoLastIndexOf()
+    {
+        String str = "www.google.com";
+        System.out.println(str.lastIndexOf('.'));
+        System.out.println(str.lastIndexOf('.',4));
+    }
     public static void main(String[] args) 
     {
         //demo1();
@@ -276,8 +293,10 @@ public class Strings2
         //demoTrim();
         //demoSplit();
         //demoIsEmpty();
-        demoSubStringBegin();
-        demoSubStringBeginAndEnd();
+        //demoSubStringBegin();
+        //demoSubStringBeginAndEnd();
+        demoIndexOf();
+        demoLastIndexOf();
         
     }
     
