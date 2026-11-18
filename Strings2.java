@@ -261,7 +261,13 @@ public class Strings2
         System.out.println(word.substring(3, 7));
     }
 
-    //replace
+    //replace()
+    static void demoreplace()
+    {
+        String s1 = "Java is easy, java is powerfull";
+        String result = s1.replaceFirst("is", "");
+        System.out.println(result);
+    }
     //replaceall
     //endWith
     //indexOf()
@@ -277,6 +283,46 @@ public class Strings2
         System.out.println(str.lastIndexOf('.'));
         System.out.println(str.lastIndexOf('.',4));
     }
+
+    //valueOf()
+    static void demovalueof()
+    {
+        int num = 123;
+        System.out.println(String.valueOf(num));
+
+        float num1 = 1.2f;
+        System.out.println(String.valueOf(num1));
+
+        double num3 = 1.222222;
+        System.out.println(String.valueOf(num3));
+    }
+    //concat()
+    static void democoncat()
+    {
+        String str1 = "Good ";
+        String str2 = "morning";
+        System.out.println(str1.concat(str2));
+    }
+    //join()
+    //repeat()
+    static void demorepeat()
+    {
+        String word = "Java";
+        System.out.println(word.repeat(5));
+    }
+    //format()
+    //isBlank()
+    static void demoisblank()
+    {
+        String s1 = "";
+        String s2 = " ";
+        String s3 = "Hello";
+
+        System.out.println(s1.isBlank());
+        System.out.println(s2.isBlank());
+        System.out.println(s3.isBlank());
+    }
+    //replaceFirst()
     public static void main(String[] args) 
     {
         //demo1();
@@ -295,8 +341,13 @@ public class Strings2
         //demoIsEmpty();
         //demoSubStringBegin();
         //demoSubStringBeginAndEnd();
-        demoIndexOf();
-        demoLastIndexOf();
+        //demoIndexOf();
+        //demoLastIndexOf();
+        //democoncat();
+        //demorepeat();
+        //demovalueof();
+        //demoisblank();
+        demoreplace();
         
     }
     
