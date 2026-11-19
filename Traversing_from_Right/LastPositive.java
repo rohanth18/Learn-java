@@ -6,16 +6,14 @@ public class LastPositive
 {
     public static int getLastPositive(int[] nums)
     {
-        int positive = 0;
         for(int i = nums.length - 1; i >= 0; i--)
         {
             if(nums[i] > 0)
             {
-                positive = nums[i];
-                break;
+                return nums[i];
             }
         }
-        return positive;
+        return 0;
     }
     public static void main(String[] args) 
     {

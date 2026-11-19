@@ -10,7 +10,7 @@ public class LearnStrings
         char ch = name.charAt(5);
         System.out.println(ch);
 
-        int returnvalue = name.compareTo("algorithms 365 technologI;es HSR layout");
+        int returnvalue = name.compareTo("lgorithms 365 technologI;es HSR layout");
         System.out.println(returnvalue);
 
         char[] namearr = name.toCharArray();

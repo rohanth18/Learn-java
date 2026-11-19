@@ -155,6 +155,20 @@ public class TwoDArray
             col++;
         }
     }
+    static int getSumofDiagonalElements(int[][] array)
+    {
+        int n = array.length;
+        int sum = 0;
+        for(int row = 0; row < array.length; row++)
+        {
+            sum = sum + (array[row][row] + array[row][n-row-1]);
+        }
+        if(n % 2 != 0)
+        {
+            sum = sum - array[n/2][n/2];
+        }
+        return sum;
+    }
     public static void main(String[] args) 
     {
         int[][] array = {
@@ -171,7 +185,8 @@ public class TwoDArray
         //printDiagonalElements(array);
         //printDiagonalElementsV2(array);
         //printDiagonalElementsRightToLeft(array);
-        printDiagonalElementsfromBothSides(array);
+        //printDiagonalElementsfromBothSides(array);
+        System.out.println(getSumofDiagonalElements(array));
 
     }
     

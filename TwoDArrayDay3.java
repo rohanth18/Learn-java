@@ -332,6 +332,43 @@ public class TwoDArrayDay3
         }
         return found;
     }
+
+    //leetcode 1572
+    public int diagonalSum(int[][] mat) 
+    {
+
+        int sum = 0;
+        int n = mat.length;
+
+        for(int i = 0; i < n; i++) 
+        {
+
+            sum += mat[i][i];
+            sum += mat[i][n - 1 - i];
+        }
+
+        if(n % 2 != 0) 
+        {
+            sum -= mat[n / 2][n / 2];
+        }
+
+        return sum;
+    }
+
+    //leetcode 867
+    public int[][] transpose(int[][] matrix) {
+        int[][] transpose = new int[matrix[0].length][matrix.length];
+        for(int i = 0; i < matrix.length; i++)
+        {
+            for(int j = 0; j < matrix[i].length; j++)
+            {
+                transpose[j][i] = matrix[i][j];
+            }
+        }
+        return transpose;
+    }
+
+
     public static void main(String[] args) 
     {
         int[][] array = {{3,5,9},{7,6,2},{4,8,1}};
@@ -342,7 +379,7 @@ public class TwoDArrayDay3
         //Finding the maximum element in 2D array
         /* int maxresult = getMaximum2DArrayElement(array);
         System.out.println("Maximum element = "+maxresult);
- */
+        */
 
         //Finding the minimum element in 2D array
         /* int minresult = getMinimum2DArrayElement(array);
@@ -351,7 +388,8 @@ public class TwoDArrayDay3
         //Counting even and odd elements count in 2D array
         /* int[] result = getEvenAndOddCount(array);
         System.out.println("Even Count = "+result[0]+" Odd Count = "+result[1]);
- */
+        */
+
         //Search for the key element in 2D array
         /* boolean result1 = isKeyElementFound(array, 8);
         if(result1 == true)

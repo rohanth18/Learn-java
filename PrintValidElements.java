@@ -5,7 +5,7 @@ public class PrintValidElements
     public static int[] printValidElements(int[] nums)
     {
         int index = 0;
-        int count =0;
+        int count = 0;
         // int[] newArray = new int[nums.length];
         for(int i = 0; i < nums.length; i++)
         {

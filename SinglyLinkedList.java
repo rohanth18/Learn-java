@@ -55,9 +55,6 @@ public class SinglyLinkedList
         head = insertAtStart(105, head);
         printLinkedList(head);
 
-        
-
-
     }
 
     //printing linked list
@@ -97,7 +94,8 @@ public class SinglyLinkedList
         return head;
     }
     static void testInsertAtEnd()
-    {Node head = null;
+    {
+        Node head = null;
         head = insertAtEnd(100, head);
         printLinkedList(head);
 
@@ -268,7 +266,7 @@ public class SinglyLinkedList
         Node prevNode = head;
         Node keyNode = head.next;
         
-        while(keyNode != null)
+       /*  while(keyNode != null)
         {
             if(keyNode.data == key)
             {
@@ -277,10 +275,29 @@ public class SinglyLinkedList
             prevNode = keyNode;
             keyNode = keyNode.next;
         }
-        if(keyNode!=null && keyNode.data == key)
+        if(keyNode != null && keyNode.data == key)
         {
             prevNode.next = keyNode.next;
+
+        } */
+         while (keyNode != null)
+        {
+            if (keyNode.data == key)
+            {
+                // Delete the current node
+                prevNode.next = keyNode.next;
+
+                // Move to the next node
+                keyNode = prevNode.next;
+            }
+            else
+            {
+                prevNode = keyNode;
+                keyNode = keyNode.next;
+            }
         }
+        
+
         return head;
     }
 
@@ -337,8 +354,11 @@ public class SinglyLinkedList
         head = deleteKeyNode(head, 6);
         printLinkedList(head);
 
+        head = insertAtEnd(4, head);
+        printLinkedList(head);
 
-
+        head = deleteKeyNode(head, 4);
+        printLinkedList(head);
  
     }
 

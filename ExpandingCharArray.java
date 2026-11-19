@@ -80,7 +80,7 @@ public class ExpandingCharArray
         System.out.println("Array before expanding");
         printArray(charArray);
         expandArray(charArray);
-        System.out.println("Array after expanding");
+        System.out.println("\nArray after expanding");
         printArray(charArray);
         
 

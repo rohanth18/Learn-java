@@ -27,6 +27,8 @@ public class Regex
 
         //XZ -- exact sequence match
         System.out.println(text.matches("XZ"));
+
+        
     }
     
 }

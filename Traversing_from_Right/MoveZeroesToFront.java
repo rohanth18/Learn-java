@@ -6,6 +6,10 @@ public class MoveZeroesToFront
 {
     public static void moveZeroesToFront(int[] nums)
     {
+        if(nums == null || nums.length == 0)
+        {
+            return;
+        }
         int j = nums.length - 1;
         for(int i = nums.length - 1; i >= 0; i--)
         {

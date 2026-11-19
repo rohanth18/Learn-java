@@ -49,6 +49,8 @@ public class Strings1
         }
     }
 
+    
+
     //Creation of string and print name, length
     static void demo6()
     {
@@ -58,12 +60,12 @@ public class Strings1
     }
     public static void main(String[] args) 
     {
-        //demo1();
+        demo1();
         //demo2();
         //demo3();
         //demo4();
         //demo5();
-        demo6();
+        //demo6();
     }
     
 }

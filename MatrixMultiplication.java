@@ -4,6 +4,11 @@ public class MatrixMultiplication
     {
         if(A == null || B == null)
         {
+            return null;
+        }
+
+        if(A.length == 0 || B.length == 0)
+        {
             return new int[][] {};
         }
 

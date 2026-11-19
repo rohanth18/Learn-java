@@ -25,8 +25,8 @@ public class MyStack
     {
         if(this.top == -1)
         {
-            System.out.println("Stack is empty idiot");
-            return -1000;
+            //System.out.println("Stack is empty idiot");
+            return -1;
         }
 
         return this.values[this.top];
@@ -37,7 +37,7 @@ public class MyStack
         if(this.top == -1)
         {
             System.out.println("Stack is empty idiot");
-            return -1000;
+            return -1;
         }
         int index = this.top;
         this.top--;

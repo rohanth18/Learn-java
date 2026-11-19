@@ -24,11 +24,11 @@ public class FindingMiddleNode
         }
         return count;
     }
-    public static Node findMiddleNode(Node head)
+    public static int getMiddleNodevalue(Node head)
     {
         if(head == null)
         {
-            return null;
+            return 0;
         }
 
         Node slow = head;
@@ -39,7 +39,7 @@ public class FindingMiddleNode
             fast = fast.next.next;
         }
 
-    return slow;
+    return slow.data;
     }
     public static void main(String[] args) {
         Node head = new Node();
@@ -54,8 +54,8 @@ public class FindingMiddleNode
         head.next.next.next = null;
 
         printLinkedList(head);
-        Node middleNode = findMiddleNode(head);
-        System.out.println("\n"+middleNode.data);
+        int middleNodeValue = getMiddleNodevalue(head);
+        System.out.println("\n"+middleNodeValue);
 
     }
 }
