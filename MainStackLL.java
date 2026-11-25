@@ -68,6 +68,8 @@ public class MainStackLL
         System.out.println("Popped element : "+stack.pop());
         System.out.println("Popped element : "+stack.pop());
 
+        System.out.println();
+
         stack.display();
 
         System.out.println();
